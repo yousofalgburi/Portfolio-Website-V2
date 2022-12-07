@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;700&display=swap');
+
+:root {
+	--background-color: var(--background_black);
+	--font-color: var(--font_white);
+
+	--background_white: #fff;
+	--background_black: #1a202c;
+	--font_black: #000;
+	--font_white: #fff;
+}
+
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+h1,
+p,
+svg,
+img {
+	transition: 0.25s ease-in-out;
+}
+h1:hover,
+p:hover,
+svg:hover,
+img:hover {
+	opacity: 0.7;
+}
+a:hover,
+svg:hover {
+	cursor: pointer;
+}
+.flex {
+	display: flex;
+}
+.flex-column {
+	display: flex;
+	flex-direction: column;
+}
+.w-center {
+	justify-content: center;
+}
+.w-end {
+	justify-content: flex-end;
+}
+.h-center {
+	align-items: center;
+}
+#themeChanger {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.theme-changer-container {
+	margin: 1rem;
+}
+svg.hidden {
+	display: none;
+}
+body {
+	background-color: var(--background-color);
+	font-family: Open Sans, sans-serif;
+	color: var(--font-color);
+	transition: background-color 0.25s ease-in-out;
+}
+section {
+	max-width: 1600px;
+}
+nav {
+	margin-top: 2rem;
+}
+nav li {
+	display: inline-block;
+}
+nav li a {
+	text-decoration: none;
+	font-size: 1.875rem;
+	font-weight: 700;
+	color: inherit;
+	margin: 1rem;
+	transition: 0.25s ease-in-out;
+}
+nav li a:hover {
+	color: #90cdf4;
+}
+.social-media-section {
+	margin: 4rem 0 3rem 0;
+}
+.social-media-section a:first-of-type {
+	margin-right: 0.5rem;
+}
+.top-section article {
+	padding-right: 2rem;
+}
+.top-section > * {
+	flex-basis: 100%;
+}
+.top-section h1 {
+	font-size: 2.25rem;
+	font-weight: 700;
+	margin-bottom: 1rem;
+	transition: 0.25s ease-in-out;
+}
+.top-section h1:hover {
+	opacity: 0.8;
+}
+.top-section p {
+	font-size: 1.25rem;
+	transition: 0.25s ease-in-out;
+}
+.top-section img {
+	border-radius: 75% 50%;
+	height: 250px;
+	margin-right: 5rem;
+	aspect-ratio: 3 / 2;
+}
+
+@media screen and (max-width: 850px) {
+	.top-section {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.top-section img {
+		margin: 0;
+	}
+	.top-section article {
+		padding: 0 2rem;
+		margin-top: 2rem;
+	}
+}
