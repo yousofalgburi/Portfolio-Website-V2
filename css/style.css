@@ -63,6 +63,19 @@ p {
 ::selection {
 	background: #90cdf4;
 }
+a {
+	text-decoration: none;
+	color: inherit;
+}
+a:hover {
+	color: #90cdf4;
+}
+a.clickable {
+	color: #90cdf4;
+}
+a.clickable:hover {
+	color: #639bbd;
+}
 
 /* Top Header Styling */
 #themeChanger {
@@ -84,15 +97,8 @@ nav li {
 }
 nav li a {
 	margin: 0 1rem;
-}
-a {
-	text-decoration: none;
 	font-size: 1.875rem;
 	font-weight: 700;
-	color: inherit;
-}
-a:hover {
-	color: #90cdf4;
 }
 
 /* Body Styling */
@@ -149,14 +155,8 @@ section {
 .project-card:last-of-type {
 	margin-right: 0;
 }
-.project-image-container {
-	height: 275px;
-	overflow: hidden;
-}
 .project-card img {
-	height: 100%;
 	width: 100%;
-	object-fit: fill;
 }
 
 /*footer styling */
@@ -168,7 +168,7 @@ footer p {
 	color: lightcoral;
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 1175px) {
 	main {
 		padding: 0 2rem;
 	}
